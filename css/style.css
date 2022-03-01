@@ -17,6 +17,7 @@ h2 {
     font-weight: 600;
     color:hsl(0, 0%, 100%);
     margin-bottom: 20px;
+    margin-top: 25px;
 }
 
 a {
@@ -42,10 +43,40 @@ p {
     transform: translate(-50%, 5%);
 }
 
+.view {
+    width: 300px;
+    height: 300px;
+    background-color: rgba(0, 255, 247,.5);
+    position: relative;
+    margin-top: -305px;
+    border-radius: 10px;
+    opacity: 0;
+}
+
+.view:hover {
+    opacity: 1;
+}
+
+.container .view img {
+    width: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+.container a {
+    color: hsl(0, 0%, 100%);
+}
+
+.container a:hover {
+    color: hsl(178, 100%, 50%);
+}
+
 .container img {
     width: 300px;
     border-radius: 10px;
-    margin-bottom: 25px;
 }
 
 .desc {
@@ -53,13 +84,20 @@ p {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1)
 }
 
-.desc img {
+.desc .img1 {
     width: 15px;
     height: 25px;
 }
 
+.desc .img2 {
+    width: 18px;
+    height: 18px;
+    margin-top: 2px;
+    margin-right: 5px;
+}
+
 .eth {
-    flex: 40%;
+    flex: 30%;
     margin-left: 10px;
     color: hsl(178, 100%, 50%);
 }
@@ -75,6 +113,7 @@ p {
 
 .profile img {
     width: 35px;
+    height: 35px;
     border: 1px solid white;
     border-radius: 20px;
     margin-top: -5px;
